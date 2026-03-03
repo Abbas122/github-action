@@ -1,0 +1,29 @@
+name: portfolio
+
+on:
+    push:
+        branches:
+            - main
+
+permissions:
+      pages: write
+      id-token: write
+
+jobs:
+    deploye:
+        runs-on: ubuntu-latest
+        
+        steps:
+
+            - name: Check out Code
+              uses: actions/checkout@v4
+
+            - name: Setup the Github Pages
+              uses: action/configure-pages@v4
+
+            - name: Uplode Static File
+              uses: actions/upload-pages-artifact@v4
+
+            - name: Deploye state pages
+              uses: actions/deploy-pages@v4
+
