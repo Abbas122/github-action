@@ -24,7 +24,7 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Setup the Github Pages
-              uses: action/configure-pages@v4
+              uses: actions/configure-pages@v4
 
             - name: Uplode Static File
               uses: actions/upload-pages-artifact@v4
