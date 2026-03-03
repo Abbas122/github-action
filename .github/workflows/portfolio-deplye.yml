@@ -29,6 +29,8 @@ jobs:
 
             - name: Uplode Static File
               uses: actions/upload-pages-artifact@v4
+              with:
+                path: '.'
 
             - name: Deploye state pages
               uses: actions/deploy-pages@v4
